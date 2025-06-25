@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Font Specifications -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- css files -->
+    <link href="css/general.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/queries.css" rel="stylesheet" />
+
+    <!-- script file for icons -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule=""
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
+    ></script>
+    <!-- Smooth scroll opensource JS -->
+    <script
+      defer
+      src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
+    ></script>
+    <!-- Personal JS file -->
+    <script defer src="js/script.js"></script>
+
+    <title>TunesWave &rarrc; Strum Your Dreams</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <span class="logo">LOGO</span>
+      <!-- <img class="logo" alt="TunesWave logo" src="img/tuneswave-logo.png" /> -->
+
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li>
+            <a class="main-nav-link" href="#catalogue">Catalogue</a>
+          </li>
+          <li>
+            <a class="main-nav-link" href="#why-us">Why Us</a>
+          </li>
+          <li>
+            <a class="main-nav-link" href="#testimonials">Reviews</a>
+          </li>
+          <li>
+            <a class="main-nav-link nav-cta" href="sign-in.html">Shop Now</a>
+          </li>
+        </ul>
+      </nav>
+
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
+    </header>
+
+    <main>
+      <section class="section-hero">
+        <div class="hero">
+          <div class="hero-img-box">
+            <picture>
+              <source />
+              <source />
+              <img
+                src="img/hero-img.png"
+                alt="A beautiful violin"
+                class="hero-img"
+              />
+            </picture>
+            <div class="triangle-up"></div>
+            <div class="heart"></div>
+          </div>
+          <div class="hero-text-box">
+            <h1 class="heading-primary">
+              Bringing the sound of your dreams closer than ever
+            </h1>
+            <p class="hero-description">
+              TunesWave helps you get top-tier stringed instruments and gear,
+              matched to your taste, delivered fast and without hassle — so you
+              can focus on playing, not hunting.
+            </p>
+            <a href="#catalogue" class="btn btn--outline margin-right-sm"
+              >Explore Instruments &dArr;</a
+            >
+            <a href="sign-in.html" class="btn btn--full">Shop Now</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-feature" id="catalogue">
+        <div class="container center-text">
+          <span class="subheading">Features</span>
+          <h2 class="heading-secondary">
+            TunesWave has 4,000&plus; types of string instruments and
+            accessories.
+          </h2>
+        </div>
+
+        <div class="container grid grid--4-cols x-clusv">
+          <div class="instrument">
+            <div>
+              <img
+                src="img/catalouge/Virtuoso V1.png"
+                alt="Virtuoso V1"
+                class="instrument-img"
+              />
+            </div>
+            <div class="instrument-content">
+              <div class="instrument-type">
+                <span class="type type--classic">Classic</span>
+              </div>
+              <p class="instrument-name">Virtuoso V1</p>
+              <ul class="instrument-deets">
+                <li class="instrument-deet">
+                  <ion-icon
+                    class="instrument-icon"
+                    name="person-add"
+                  ></ion-icon>
+                  <spanz>Beginner and Pro</spanz>
+                </li>
+                <li class="instrument-deet">
+                  <ion-icon class="instrument-icon" name="barbell"></ion-icon>
+                  <span>87% Durable</span>
+                </li>
+                <li class="instrument-deet">
+                  <ion-icon class="instrument-icon" name="pricetag"></ion-icon>
+                  <span>180&dollar;</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="instrument">
+            <div>
+              <img
+                src="img/catalouge/Yamaha APX1200.png"
+                alt="Yamaha APX1200 image"
+                class="instrument-img"
+              />
+            </div>
+            <div class="instrument-content">
+              <div class="instrument-type">
+                <span class="type type--hybrid">Hybrid</span>
+              </div>
+              <p class="instrument-name">Yamaha APX1200</p>
+              <ul class="instrument-deets">
+                <li class="instrument-deet">
+                  <ion-icon
+                    class="instrument-icon"
+                    name="person-add"
+                  ></ion-icon>
+                  <spanz>Advanced and Pro</spanz>
+                </li>
+                <li class="instrument-deet">
+                  <ion-icon class="instrument-icon" name="barbell"></ion-icon>
+                  <span>89% Durable</span>
+                </li>
+                <li class="instrument-deet">
+                  <ion-icon class="instrument-icon" name="pricetag"></ion-icon>
+                  <span>290&dollar;</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="instrument">
+            <div>
+              <img
+                src="img/catalouge/Yamaha YEV-104.png"
+                alt="Yamaha YEV-104"
+                class="instrument-img"
+              />
+            </div>
+            <div class="instrument-content">
+              <div class="instrument-type">
+                <span class="type type--classic">Classic</span>
+                <span class="type type--electric">Electric</span>
+              </div>
+              <p class="instrument-name">Yamaha YEV-104</p>
+              <ul class="instrument-deets">
+                <li class="instrument-deet">
+                  <ion-icon
+                    class="instrument-icon"
+                    name="person-add"
+                  ></ion-icon>
+                  <spanz>Pro</spanz>
+                </li>
+                <li class="instrument-deet">
+                  <ion-icon class="instrument-icon" name="barbell"></ion-icon>
+                  <span>95% Durable</span>
+                </li>
+                <li class="instrument-deet">
+                  <ion-icon class="instrument-icon" name="pricetag"></ion-icon>
+                  <span>250&dollar;</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="instrument">
+            <div>
+              <img
+                src="img/catalouge/Thomann 111E Double Bass.png"
+                alt="Thomann 111E Double Bass"
+                class="instrument-img"
+              />
+            </div>
+            <div class="instrument-content">
+              <div class="instrument-type">
+                <span class="type type--classic">Classic</span>
+                <span class="type type--acoustic">Acoustic</span>
+              </div>
+              <p class="instrument-name">Thomann 111E</p>
+              <ul class="instrument-deets">
+                <li class="instrument-deet">
+                  <ion-icon
+                    class="instrument-icon"
+                    name="person-add"
+                  ></ion-icon>
+                  <spanz>Beginner and Pro</spanz>
+                </li>
+                <li class="instrument-deet">
+                  <ion-icon class="instrument-icon" name="barbell"></ion-icon>
+                  <span>77% Durable</span>
+                </li>
+                <li class="instrument-deet">
+                  <ion-icon class="instrument-icon" name="pricetag"></ion-icon>
+                  <span>160&dollar;</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="container full-catalouge">
+          <a href="sign-in.html" class="link">View full catalouge&rArr;</a>
+        </div>
+      </section>
+
+      <section class="section-why-us" id="why-us">
+        <div class="container center-text">
+          <span class="subheading">Why Choose Us</span>
+          <h2 class="heading-secondary">
+            More than instruments. We deliver experiences
+          </h2>
+        </div>
+
+        <div class="container grid grid--2-cols">
+          <div class="why-us">
+            <ion-icon name="trophy-outline" class="why-us--icon"></ion-icon>
+            <h3 class="heading-tertiary">Carefully selected</h3>
+            <p class="why-us--text">
+              At TunesWave, every instrument is handpicked to meet the highest
+              standards of quality and craftsmanship. We partner only with
+              trusted brands and experienced makers, ensuring that what you get
+              isn&apos;t just an instrument — it&apos;s a masterpiece ready to
+              inspire your music.
+            </p>
+          </div>
+
+          <div class="why-us">
+            <ion-icon name="cash-outline" class="why-us--icon"></ion-icon>
+            <h3 class="heading-tertiary">Affordable prices</h3>
+            <p class="why-us--text">
+              We believe great music shouldn’t cost a fortune. That’s why we
+              offer top-tier instruments and accessories at prices that respect
+              your budget. With TunesWave, you can pursue your passion without
+              breaking the bank
+            </p>
+          </div>
+
+          <div class="why-us">
+            <ion-icon name="rocket-outline" class="why-us--icon"></ion-icon>
+            <h3 class="heading-tertiary">Fast delivery</h3>
+            <p class="why-us--text">
+              Your sound shouldn&apos;t wait. That&apos;s why we work with
+              reliable logistics partners to deliver your order quickly and
+              safely. Wherever you are, we&apos;ll get your instrument to your
+              door — fast and hassle-free.
+            </p>
+          </div>
+
+          <div class="why-us">
+            <ion-icon
+              name="checkmark-circle-outline"
+              class="why-us--icon"
+            ></ion-icon>
+            <h3 class="heading-tertiary">3 Months Guarantee</h3>
+            <p class="why-us--text">
+              Your satisfaction is our promise. All our products come with a
+              3-month guarantee that covers any manufacturing defects or
+              unexpected issues. If something&apos;s not right, we&apos;ll make
+              it right — no stress, no fuss.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-testimonials" id="testimonials">
+        <div class="container center-text">
+          <span class="subheading">Customer reviews</span>
+          <h2 class="heading-secondary">Our instruments. Their stories.</h2>
+        </div>
+
+        <div class="rating-container">
+          <div class="average-ratings">
+            <p class="avg-rating-title">
+              <ion-icon class="ratings-icon" name="star"></ion-icon>
+              <span>Total ratings</span>
+            </p>
+
+            <div class="avg-stars d4_75-stars">
+              <div>
+                <ion-icon class="ratings-icon star1" name="star"></ion-icon>
+                <ion-icon class="ratings-icon star2" name="star"></ion-icon>
+                <ion-icon class="ratings-icon star3" name="star"></ion-icon>
+                <ion-icon class="ratings-icon star4" name="star"></ion-icon>
+                <ion-icon
+                  class="ratings-icon star5"
+                  name="star-half"
+                ></ion-icon>
+              </div>
+              <div>
+                <span>4.75/5</span>
+              </div>
+            </div>
+            <span class="avg-rating-text">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="badge-icon"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z"
+                />
+              </svg>
+
+              Based on 231+ reviews</span
+            >
+          </div>
+
+          <div class="testimonials">
+            <div class="testimonials-1">
+              <figure class="testimonial">
+                <div class="testimonial-profile">
+                  <img
+                    class="testimonial-img"
+                    alt="Photo of customer James Uchenna"
+                    src="img/customers/j-uchenna.png"
+                  />
+
+                  <div class="profile-text">
+                    <p class="testimonial-name">&mdash; James Uchenna</p>
+
+                    <div class="d5-stars customer-rating">
+                      <ion-icon
+                        class="ratings-icon customer-rating-icon star1"
+                        name="star"
+                      ></ion-icon>
+                      <ion-icon
+                        class="ratings-icon customer-rating-icon star2"
+                        name="star"
+                      ></ion-icon>
+                      <ion-icon
+                        class="ratings-icon customer-rating-icon star3"
+                        name="star"
+                      ></ion-icon>
+                      <ion-icon
+                        class="ratings-icon customer-rating-icon star4"
+                        name="star"
+                      ></ion-icon>
+                      <ion-icon
+                        class="ratings-icon customer-rating-icon star5"
+                        name="star"
+                      ></ion-icon>
+                    </div>
+                  </div>
+                </div>
+                <div class="testimonial-text">
+                  <blockquote class="testimonial-text">
+                    TunesWave delivered a violin that exceeded my expectations.
+                    The sound quality is rich, and the craftsmanship is superb.
+                    As a professional, I&apos;m picky — but this was spot on.
+                    Highly recommend!
+                  </blockquote>
+                </div>
+              </figure>
+
+              <figure class="testimonial">
+                <div class="testimonial-profile">
+                  <img
+                    class="testimonial-img"
+                    alt="Photo of customer Ada Okafor"
+                    src="img/customers/ada.png"
+                  />
+                  <div class="profile-text">
+                    <p class="testimonial-name">&mdash; Ada Uchenna</p>
+
+                    <div class="d4-stars customer-rating">
+                      <ion-icon
+                        class="ratings-icon customer-rating-icon star1"
+                        name="star"
+                      ></ion-icon>
+                      <ion-icon
+                        class="ratings-icon customer-rating-icon star2"
+                        name="star"
+                      ></ion-icon>
+                      <ion-icon
+                        class="ratings-icon customer-rating-icon star3"
+                        name="star"
+                      ></ion-icon>
+                      <ion-icon
+                        class="ratings-icon customer-rating-icon star4"
+                        name="star"
+                      ></ion-icon>
+                      <ion-icon
+                        class="ratings-icon customer-rating-icon star5"
+                        name="star"
+                      ></ion-icon>
+                    </div>
+                  </div>
+                </div>
+                <div class="testimonial-text">
+                  <blockquote class="testimonial-text">
+                    Loved the hybrid guitar I got. Great feel, beautiful design.
+                    Customer service was responsive when I had a shipping
+                    question. My only wish? A few more color options.
+                  </blockquote>
+                </div>
+              </figure>
+
+              <figure class="testimonial">
+                <div class="testimonial-profile">
+                  <img
+                    class="testimonial-img"
+                    alt="Photo of customer Chidimma Joyce"
+                    src="img/customers/chidimma.png"
+                  />
+
+                  <div class="profile-text">
+                    <p class="testimonial-name">&mdash; Chidimma Joyce</p>
+
+                    <div class="d5-stars customer-rating">
+                      <ion-icon
+                        class="ratings-icon customer-rating-icon star1"
+                        name="star"
+                      ></ion-icon>
+                      <ion-icon
+                        class="ratings-icon customer-rating-icon star2"
+                        name="star"
+                      ></ion-icon>
+                      <ion-icon
+                        class="ratings-icon customer-rating-icon star3"
+                        name="star"
+                      ></ion-icon>
+                      <ion-icon
+                        class="ratings-icon customer-rating-icon star4"
+                        name="star"
+                      ></ion-icon>
+                      <ion-icon
+                        class="ratings-icon customer-rating-icon star5"
+                        name="star"
+                      ></ion-icon>
+                    </div>
+                  </div>
+                </div>
+                <div class="testimonial-text">
+                  <blockquote class="testimonial-text">
+                    I&apos;ve ordered instruments for my students from
+                    TunesWave, and I&apos;m always impressed. Reliable delivery,
+                    solid quality, and the students love them. This is my go-to
+                    shop now.
+                  </blockquote>
+                </div>
+              </figure>
+
+              <figure class="testimonial">
+                <div class="testimonial-profile">
+                  <img
+                    class="testimonial-img"
+                    alt="Photo of customer Michael Sunday"
+                    src="img/customers/michael.png"
+                  />
+
+                  <div class="profile-text">
+                    <p class="testimonial-name">&mdash; Michael Sunday</p>
+
+                    <div class="d5-stars customer-rating">
+                      <ion-icon
+                        class="ratings-icon customer-rating-icon star1"
+                        name="star"
+                      ></ion-icon>
+                      <ion-icon
+                        class="ratings-icon customer-rating-icon star2"
+                        name="star"
+                      ></ion-icon>
+                      <ion-icon
+                        class="ratings-icon customer-rating-icon star3"
+                        name="star"
+                      ></ion-icon>
+                      <ion-icon
+                        class="ratings-icon customer-rating-icon star4"
+                        name="star"
+                      ></ion-icon>
+                      <ion-icon
+                        class="ratings-icon customer-rating-icon star5"
+                        name="star"
+                      ></ion-icon>
+                    </div>
+                  </div>
+                </div>
+                <div class="testimonial-text">
+                  <blockquote class="testimonial-text">
+                    Decent starter kit for the price. The electronic violin
+                    works well, but I did have a minor issue with the tuning at
+                    first but, customer support was helpful and sorted it fast.
+                  </blockquote>
+                </div>
+              </figure>
+            </div>
+
+            <div class="testimonial-2 container">
+              <a href="#" class="link"> View all reviews&rArr;</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-cta" id="cta">
+        <div class="container">
+          <div class="cta">
+            <div
+              class="cta-img-box"
+              role="img"
+              aria-label="Lady playing violin"
+            ></div>
+
+            <div class="cta-text-box">
+              <h2 class="heading-secondary">Stay Tuned with TunesWave!</h2>
+              <p class="cta-text">
+                Get exclusive deals, new arrivals, and pro tips — straight to
+                your inbox. No spam - unsubscribe anytime.
+              </p>
+
+              <form class="cta-form" name="newsletter--sign-up" netlify>
+                <div>
+                  <label for="full-name">Full Name</label>
+                  <input
+                    id="full-name"
+                    type="text"
+                    placeholder="John Doe"
+                    name="full-name"
+                    required
+                  />
+                </div>
+
+                <div>
+                  <label for="email">Email address</label>
+                  <input
+                    id="email"
+                    type="email"
+                    placeholder="me@example.com"
+                    name="email"
+                    required
+                  />
+                </div>
+
+                <div>
+                  <label for="class">Your musical status</label>
+                  <select id="select-clasa" name="select-class" required>
+                    <option value="">Please choose one option:</option>
+                    <option value="student">Student</option>
+                    <option value="pro">Professsional</option>
+                    <option value="teacher">Teacher</option>
+                    <option value="enthusiast">Enthusiast</option>
+                  </select>
+                </div>
+
+                <button class="btn btn--form">Join TunesWave</button>
+
+                <!-- <input type="checkbox" />
+                <input type="number" /> -->
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container grid grid--footer">
+        <div class="logo-col">
+          <a href="#" class="footer-logo">
+            <img
+              class="logo"
+              alt="TunesWave logo"
+              src="img/tuneswave-logo.png"
+            />
+          </a>
+
+          <ul class="social-links">
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon class="social-icon" name="logo-instagram"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon class="social-icon" name="logo-facebook"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon class="social-icon" name="logo-twitter"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon class="social-icon" name="logo-linkedin"></ion-icon
+              ></a>
+            </li>
+          </ul>
+
+          <p class="copyright">
+            Copyright &copy; <span class="year">2027</span> by TunesWave, LTD.
+            All rights reserved.
+          </p>
+        </div>
+
+        <div class="address-col">
+          <p class="footer-heading">Contact us</p>
+          <address class="contacts">
+            <p class="address">
+              123 Benosn Estate., 2nd Floor, San Dominiques, CA 81132
+            </p>
+            <p>
+              <a class="footer-link" href="tel:314-890-2675">314-890-2675</a
+              ><br />
+              <a class="footer-link" href="mailto:tunes@wave.com"
+                >tunes@wave.com</a
+              >
+            </p>
+          </address>
+        </div>
+
+        <nav class="nav-col">
+          <p class="footer-heading">Account</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">Create account</a></li>
+            <li><a class="footer-link" href="#">Sign in</a></li>
+            <li><a class="footer-link" href="#">iOS app</a></li>
+            <li><a class="footer-link" href="#">Android app</a></li>
+          </ul>
+        </nav>
+
+        <nav class="nav-col">
+          <p class="footer-heading">Company</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">About TunesWave</a></li>
+            <li><a class="footer-link" href="#">For Business</a></li>
+            <li><a class="footer-link" href="#">Partners</a></li>
+            <li><a class="footer-link" href="#">Careers</a></li>
+          </ul>
+        </nav>
+
+        <nav class="nav-col">
+          <p class="footer-heading">Resources</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">Catalogue</a></li>
+            <li><a class="footer-link" href="#">Help center</a></li>
+            <li><a class="footer-link" href="#">Privacy & terms</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>

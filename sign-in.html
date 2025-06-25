@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Font Specifications -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- css files -->
+    <link href="css/general.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/queries.css" rel="stylesheet" />
+
+    <!-- script file for icons -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule=""
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <title>TunesWave &rarrc; Strum Your Dreams</title>
+
+    <style>
+      /* .with-text {
+        padding: 0 1.6rem;
+      } */
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="container grid sign-in--box">
+        <div class="top">
+          <p class="top-text">
+            Type your email and password to log in or create an TunesWave
+            account
+          </p>
+        </div>
+
+        <div class="form">
+          <form class="sign-in--form" name="sign-up" netlify>
+            <div>
+              <label class="sign-in--label" for="email">Email address</label>
+              <input
+                id="email"
+                type="email"
+                placeholder="me@example.com"
+                name="email"
+                required
+              />
+            </div>
+
+            <div>
+              <label class="sign-in--label" for="password">Password</label>
+              <input
+                id="password"
+                type="password"
+                placeholder="************"
+                name="password"
+                required
+              />
+            </div>
+
+            <button class="btn btn--cont">Continue</button>
+          </form>
+        </div>
+
+        <div class="cont-area center-text">
+          <p class="cont-text">By continuing you agree to TunesWave's</p>
+          <a href="" class="link--sign-in link">Terms and Conditions</a>
+        </div>
+
+        <div class="sign-up center-text">
+          <p class="cont-text">
+            Do not have an account? Click the link below to
+          </p>
+          <a href="#sign-up--box" class="link link--sign-in sign-up--link"
+            >Sign Up</a
+          >
+        </div>
+
+        <div class="sign-in-options">
+          <a href="" class="btn btn--sign-in">
+            <ion-icon class="social-icon" name="logo-google-sharp"></ion-icon>
+            <p class="with-text">Log in with Google</p>
+            <span></span>
+          </a>
+          <a href="" class="btn btn--sign-in">
+            <ion-icon class="social-icon" name="logo-google-sharp"></ion-icon>
+            <p class="with-text">Log in with Facebook</p>
+            <span></span>
+          </a>
+        </div>
+      </div>
+    </main>
+    <aside class="sign-up--box none">
+      <h1>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum iste
+        eos nulla temporibus ea labore cumque quasi expedita, incidunt porro
+        iure et reprehenderit magnam placeat accusantium suscipit, officia
+        quisquam soluta!
+      </h1>
+      <h1>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum iste
+        eos nulla temporibus ea labore cumque quasi expedita, incidunt porro
+        iure et reprehenderit magnam placeat accusantium suscipit, officia
+        quisquam soluta!
+      </h1>
+      <h1>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum iste
+        eos nulla temporibus ea labore cumque quasi expedita, incidunt porro
+        iure et reprehenderit magnam placeat accusantium suscipit, officia
+        quisquam soluta!
+      </h1>
+    </aside>
+  </body>
+</html>
+
+<!-- .parent {
+  width: 600px;
+  margin: 100px auto;
+  padding: 20px 40px;
+  border-radius: 10px;
+  height: fit-content;
+  border: 1px solid #087f5b;
+  box-shadow: 5px 6px 4px rgba(0, 0, 0, 0.3);
+
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 10px;
+  justify-items: center;
+}
+
+.top {
+  color: #343a40;
+  font-size: 16px;
+  width: 480px;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.form {
+  width: 480px;
+  margin-bottom: 12px;
+}
+
+.form-block {
+  position: relative;
+}
+
+input {
+  padding: 4px 20px 0;
+  border-radius: 5px;
+  border: 2px solid #087f5b;
+  background: none;
+  height: 32px;
+  width: 480px;
+  outline: none;
+}
+
+input::placeholder {
+  color: #343a40;
+  opacity: 0.5;
+}
+
+.form-text {
+  background-color: #fff;
+  width: 170px;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  color: #087f5b;
+
+  position: absolute;
+  top: -10px;
+  left: 10px;
+  transform: translate(3%, 10%);
+}
+
+.btn-area {
+  width: 480px;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.cont {
+  background-color: #087f5b;
+  height: 32px;
+  width: 480px;
+  font-size: 16px;
+  text-align: center;
+  color: #c3fae8;
+  border: none;
+  cursor: pointer;
+}
+
+.cont-text {
+  color: #343a40;
+}
+
+.cont-link:link {
+  color: #087f5b;
+  text-decoration: none;
+}
+
+.cont-link:hover,
+.cont-link:visited,
+.cont-link:active {
+  color: #087f5b;
+  text-decoration: underline;
+}
+
+.cont-text,
+.cont-link {
+  font-size: 14px;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.fb {
+  width: 480px;
+}
+
+.fb-btn {
+  width: 480px;
+  height: 40px;
+  background-color: blue;
+  border: none;
+  cursor: pointer;
+
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  align-items: center;
+  justify-content: center;
+}
+
+.fb-img {
+  width: 24px;
+  height: 24px;
+
+  margin-left: 20px;
+}
+
+.fb-text {
+  color: #fff;
+  font-size: 16px;
+} -->

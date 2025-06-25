@@ -1,0 +1,714 @@
+/* ########################### */
+/* HEADER */
+/* ########################### */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #e6fcf5;
+
+  height: 9.6rem;
+  padding: 0 4.8rem;
+
+  position: relative;
+}
+
+.logo {
+  font-weight: 600;
+  font-size: 2.4rem;
+  height: 2.2rem;
+}
+
+/* ####################  */
+/* NAVIGATION */
+/* #################### */
+
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 3.2rem;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  font-size: 1.8rem;
+  transition: all 0.3s;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: #0ca678;
+}
+
+.main-nav-link.nav-cta:link,
+.main-nav-link.nav-cta:visited {
+  background-color: #38d9a9;
+  padding: 1.2rem 2.4rem;
+  border-radius: 4px;
+  color: #222;
+}
+
+.main-nav-link.nav-cta:hover,
+.main-nav-link.nav-cta:active {
+  background-color: #0ca678;
+}
+
+/* Mobile Nav */
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+
+  display: none;
+}
+
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #333;
+}
+
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
+}
+
+/* STICKY NAV */
+.sticky .header {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 8rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  z-index: 999;
+  background-color: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
+}
+
+.sticky .section-hero {
+  margin-top: 9.6rem;
+}
+
+/* ########################### */
+/* HERO SECTION */
+/* ########################### */
+.section-hero {
+  background-color: #e6fcf5;
+  padding: 4.8rem 0 9.6rem 0;
+}
+
+.hero {
+  max-width: 130rem;
+  /* margin: 0 auto; */
+  padding: 0 3.2rem;
+
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 9.6rem;
+  align-items: center;
+}
+
+.hero-description {
+  font-size: 2rem;
+  line-height: 1.6;
+  margin-bottom: 4.8rem;
+}
+
+.hero-img-box {
+  position: relative;
+  /* background-color: black; */
+}
+
+.hero-img {
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.4))
+    drop-shadow(0 8px 16px rgba(0, 0, 0, 0.15));
+  width: 100%;
+  z-index: 99;
+  position: relative;
+}
+
+/*###### Shape tricks ######*/
+
+.triangle-up {
+  filter: drop-shadow(1px 0 rgba(51, 51, 51, 0.5))
+    drop-shadow(-1px 0 rgba(51, 51, 51, 0.5))
+    drop-shadow(0 1px rgba(51, 51, 51, 0.5));
+  position: absolute;
+  top: 15rem;
+  left: 3.65rem;
+
+  width: 0;
+  height: 0;
+  border-right: 15rem solid transparent;
+  border-left: 15rem solid transparent;
+  border-bottom: 30rem solid #c3fae8;
+}
+
+.triangle-up::after {
+  content: "";
+  filter: drop-shadow(1px 0 rgba(51, 51, 51, 0.5))
+    drop-shadow(-1px 0 rgba(51, 51, 51, 0.5))
+    drop-shadow(0 1px rgba(51, 51, 51, 0.5));
+
+  position: absolute;
+  top: 2.8rem;
+  left: -13rem;
+
+  width: 0;
+  height: 0;
+  border-right: 13rem solid transparent;
+  border-left: 13rem solid transparent;
+  border-bottom: 26rem solid #e6fcf5;
+}
+
+/* .heart,
+.heart::after,
+.heart::before {
+  filter: drop-shadow(1px 0 rgba(51, 51, 51, 0.5))
+    drop-shadow(-1px 0 rgba(51, 51, 51, 0.5))
+    drop-shadow(0 1px rgba(51, 51, 51, 0.5));
+} */
+
+.heart {
+  width: 5rem;
+  height: 5rem;
+  position: absolute;
+  top: 4rem;
+  left: 16.65rem;
+  background: #c3fae8;
+  transform: rotate(-45deg);
+
+  filter: drop-shadow(1px 0 rgba(51, 51, 51, 0.5))
+    drop-shadow(-1px 0 rgba(51, 51, 51, 0.5))
+    drop-shadow(0 1px rgba(51, 51, 51, 0.5))
+    drop-shadow(0 -1px rgba(51, 51, 51, 0.5));
+  /* drop-shadow(0 0 8px rgba(135, 232, 222)); soft minty glow */
+}
+
+.heart::before,
+.heart::after {
+  content: "";
+  width: 5rem;
+  height: 5rem;
+  background: #c3fae8;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.heart::before {
+  top: -2.5rem;
+  left: 0;
+}
+
+.heart::after {
+  left: 2.5rem;
+  top: 0;
+}
+
+/* ########################### */
+/* FEATURES SECTION */
+/* ########################### */
+
+.section-feature {
+  padding: 9.6rem 0;
+}
+
+.x-clusv {
+  column-gap: 5.2rem;
+}
+
+.instrument {
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  border-radius: 1.1rem;
+  overflow: hidden;
+  transition: all 0.4s;
+}
+
+.instrument:hover {
+  transform: translateY(-1.2rem);
+  box-shadow: 0 3.2rem 4.4rem rgba(0, 0, 0, 0.06);
+}
+
+.instrument-content {
+  padding: 3.2rem 1.8rem 4.8rem 1.8rem;
+}
+
+.instrument-types {
+  margin-bottom: 1.2rem;
+  display: flex;
+  gap: 0.4rem;
+}
+
+.type {
+  display: inline-block;
+  padding: 0.2rem 0.8rem;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  color: #333;
+  border-radius: 4rem;
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+}
+
+.type--electric {
+  background-color: #6c5ce7;
+  color: #fff;
+}
+
+.type--classic {
+  background-color: #f3e5ab;
+  color: #4a3b0c;
+}
+
+.type--hybrid {
+  background-color: #00b894;
+  color: #fff;
+}
+
+.type--acoustic {
+  background-color: #ff6f61;
+  color: #fff;
+}
+
+.instrument-name {
+  font-size: 2.4rem;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 3.2rem;
+}
+
+.instrument-deets {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.instrument-deet {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+.instrument-icon {
+  height: 2.4rem;
+  width: 2.4rem;
+  color: #0ca678;
+}
+
+.instrument-img {
+  width: 100%;
+}
+
+.full-catalouge {
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+/* ########################### */
+/* WHY CHOOSE US SECTION */
+/* ########################### */
+
+.section-why-us {
+  padding-bottom: 9.6rem;
+}
+
+.why-us--icon {
+  color: #0ca678;
+  height: 3.2rem;
+  width: 3.2rem;
+  margin-bottom: 1.2rem;
+}
+
+.why-us--text {
+  font-size: 1.4rem;
+  line-height: 1.4;
+}
+
+/* ########################### */
+/* TESTIMONIAL SECTION */
+/* ########################### */
+
+.section-testimonials {
+  padding: 4.8rem;
+  background-color: #e6fcf5;
+}
+
+.rating-container {
+  display: grid;
+  grid-template-columns: 1.2fr 2.8fr;
+  gap: 3.6rem;
+}
+
+.ratings-icon {
+  color: #ffd700;
+  font-size: 1.3rem;
+}
+
+.average-ratings {
+  align-self: center;
+}
+
+.avg-rating-title {
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 1.2rem;
+
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.avg-rating-title .ratings-icon {
+  font-size: 1.6rem;
+}
+
+.avg-stars,
+.avg-rating-text {
+  padding-left: 3.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  width: 24rem;
+}
+
+.avg-stars span {
+  font-weight: 600;
+}
+
+.avg-rating-text {
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-top: 0.8rem;
+}
+
+.badge-icon {
+  stroke: #0ca678;
+  height: 1.8rem;
+  width: 1.8rem;
+}
+
+/* Testimonial Part */
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  gap: 3.6rem;
+}
+
+.testimonials-1 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 3.6rem;
+  column-gap: 5.2rem;
+}
+
+/* Testimonial details */
+.testimonial-profile {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2.4rem;
+}
+
+.testimonial-img {
+  width: 4.8rem;
+  border-radius: 50%;
+  border: 2px solid #0ca678;
+}
+
+.customer-rating {
+  margin-top: 0.6rem;
+  padding-left: 1.4rem;
+}
+
+.testimonial-name {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+/* Testimonial text box */
+.testimonial-text {
+  font-size: 1.2rem;
+  line-height: 1.4;
+}
+
+/* 
+#################
+styling the different star classes
+#################
+*/
+.d4-stars .star5 {
+  color: #e6fcf5;
+}
+
+/* ################### */
+/* CTA SECTION */
+/* ################### */
+
+.section-cta {
+  padding: 4.8rem 0 12.8rem;
+}
+
+.cta {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+  border-radius: 11px;
+  overflow: hidden;
+
+  background-image: linear-gradient(to left bottom, #38d9a9, #0ca678);
+}
+
+.cta-text-box {
+  padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+  color: #0c3a41;
+}
+
+.cta .heading-secondary {
+  color: #0c3a41;
+  margin-bottom: 3.2rem;
+}
+
+.cta-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 4.8rem;
+}
+
+.cta-img-box {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(12, 166, 120, 0.3),
+      rgba(12, 166, 120, 0.7)
+    ),
+    url("../img/cta/Violinist2.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
+.cta-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 3.2rem;
+  row-gap: 2.4rem;
+}
+
+.cta-form label {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin: 1.2rem;
+}
+
+.cta-form input,
+.cta-form select {
+  width: 100%;
+  padding: 1.2rem;
+  font-size: 1.8rem;
+  color: inherit;
+  font-family: inherit;
+  border: none;
+  background-color: #e9f9fb;
+  border-radius: 4px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.cta-form input::placeholder {
+  color: #aaa;
+}
+
+.cta *:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgba(56, 217, 169, 0.7);
+}
+
+/* ################### */
+/* FOOTER */
+/* ################### */
+
+.footer {
+  padding: 12.8rem 0;
+  border-top: 2px solid #e9f9fb;
+}
+
+.grid--footer {
+  grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+}
+
+.logo-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-logo {
+  display: block;
+  margin-bottom: 2.6rem;
+}
+
+.social-icon {
+  height: 2.4rem;
+  width: 2.4rem;
+}
+
+.copyright {
+  font-size: 1.2rem;
+  line-height: 1.4;
+  color: #7f7f7f;
+  margin-top: auto;
+}
+
+.social-links,
+.footer-nav {
+  list-style: none;
+
+  display: flex;
+  gap: 1.4rem;
+}
+
+.footer-heading {
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 3rem;
+}
+
+.contacts {
+  font-style: normal;
+  font-size: 1.4rem;
+  line-height: 1.4;
+}
+
+.address {
+  margin-bottom: 2.2rem;
+}
+
+.footer-nav {
+  flex-direction: column;
+}
+
+.footer-link:link,
+.footer-link:visited {
+  text-decoration: none;
+  font-size: 1.4rem;
+  color: #7f7f7f;
+
+  transition: all 0.3s;
+}
+
+.footer-link:hover,
+.footer-link:active {
+  color: #555;
+}
+
+/* ################# */
+/* SIGN-IN PAGE */
+/* ################# */
+.sign-in--box {
+  background-color: #c3fae8;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 3.6rem 6.4rem;
+  border-radius: 1rem;
+  border: 0.1rem solid #0ca678;
+  box-shadow: 0.5rem 0.6rem 0.4rem rgba(0, 0, 0, 0.3);
+
+  gap: 1rem;
+  justify-content: center;
+  font-size: 1.8rem;
+  text-align: center;
+  color: #222;
+}
+
+.sign-in--form {
+  display: grid;
+  gap: 1rem;
+}
+
+.sign-in--form div {
+  display: flex;
+  position: relative;
+}
+
+/* .sign-in--label {
+  display: none;
+  transition: all 0.3s;
+} */
+
+.sign-in--label {
+  position: absolute;
+  top: -0.5rem;
+  left: 1rem;
+  padding: 0 1.8rem;
+  color: #c3fae8;
+  background-color: #0c3a41;
+  font-size: 1.2rem;
+  border-radius: 0.4rem;
+}
+
+.sign-in--form input {
+  width: 100%;
+  padding: 0.8rem;
+  font-size: 1.8rem;
+  color: inherit;
+  font-family: inherit;
+  border: 0.2rem solid #0c3a41;
+  background-color: #e9f9fb;
+  border-radius: 0.4rem;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.sign-in-options {
+  display: grid;
+  gap: 1rem;
+}
+
+.btn.btn--cont,
+.btn.btn--sign-in {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  border: 0.1rem solid #222;
+  padding: 0.8rem 1.6rem;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.sign-in--form *:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.5rem rgba(56, 217, 169, 0.7);
+}
+
+/* Styling the diappearing effects of the sign-in/sign-up */
+.none {
+  display: none;
+}
+
+.display {
+  display: grid;
+}
+
+.sign-up--box {
+  background-color: #c3fae8;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 3.6rem 6.4rem;
+  border-radius: 1rem;
+  border: 0.1rem solid #0ca678;
+  box-shadow: 0.5rem 0.6rem 0.4rem rgba(0, 0, 0, 0.3);
+
+  gap: 1rem;
+  justify-content: center;
+  font-size: 1.8rem;
+  text-align: center;
+  color: #222;
+}

@@ -8,14 +8,15 @@ yearEl.textContent = currentYear;
 ///////////////////////////////////////////////////////////
 // Making Sign-In/Sign-Up Disappear
 
-const signInBox = document.querySelector(".sign-in--box");
-const signUpLink = document.querySelector(".sign-up--link");
-const signUpBox = document.querySelector(".sign-up--box");
+// const mainSection = document.querySelector(".main");
+// const signUpLink = document.querySelector(".sign-up--link");
+// const asideSection = document.querySelector(".aside");
 
-signUpLink.addEventListener("click", function () {
-  signInBox.classList.add("none");
-  signUpBox.classList.toggle("none");
-});
+// signUpLink.addEventListener("click", function () {
+//   mainSection.classList.remove("display").add("none");
+//   asideSection.classList.remove("none").add("display");
+//   console.log(asideSection);
+// });
 ///////////////////////////////////////////////////////////
 //Making MObile Nav Work
 const btnNavEl = document.querySelector(".btn-mobile-nav");
@@ -26,32 +27,32 @@ btnNavEl.addEventListener("click", function () {
 });
 
 ///////////////////////////////////////////////////////////
-// const allLinks = document.querySelectorAll("a:link");
-// console.log(allLinks);
+const allLinks = document.querySelectorAll("a:link");
+console.log(allLinks);
 
-// allLinks.forEach(function (link) {
-//   link.addEventListener("click", function (e) {
-//     e.preventDefault();
-//     const href = link.getAttribute("href");
+allLinks.forEach(function (link) {
+  link.addEventListener("click", function (e) {
+    e.preventDefault();
+    const href = link.getAttribute("href");
 
-//     //Scroll back to top
-//     if (href === "#")
-//       window.scrollTo({
-//         top: 0,
-//         behavior: "smooth",
-//       });
+    //Scroll back to top
+    if (href === "#")
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
 
-//     //Scroll to other links
-//     if (href !== "#" && href.startsWith("#")) {
-//       const sectionEl = document.querySelector(href);
-//       sectionEl.scrollIntoView({ behavior: "smooth" });
-//     }
+    //Scroll to other links
+    if (href !== "#" && href.startsWith("#")) {
+      const sectionEl = document.querySelector(href);
+      sectionEl.scrollIntoView({ behavior: "smooth" });
+    }
 
-//     //collapse nav
-//     if (link.classList.contains("main-nav-link"))
-//       headerEl.classList.toggle("nav-open");
-//   });
-// });
+    //collapse nav
+    if (link.classList.contains("main-nav-link"))
+      headerEl.classList.toggle("nav-open");
+  });
+});
 
 ///////////////////////////////////////////////////////////
 //Sticky Nav

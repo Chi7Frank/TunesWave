@@ -692,7 +692,7 @@ styling the different star classes
 }
 
 .display {
-  display: grid;
+  display: block;
 }
 
 .sign-up--box {

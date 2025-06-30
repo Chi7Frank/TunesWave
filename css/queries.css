@@ -289,6 +289,7 @@
   .margin-right-sm {
     margin-bottom: 1.6rem !important;
   }
+
   /* Resetting the grids */
   .grid--2-cols {
     grid-template-columns: 1fr;
@@ -296,6 +297,15 @@
 
   .grid {
     column-gap: 3.2rem;
+  }
+
+  /* Updating the Catalogue */
+  .instrument-deet {
+    font-size: 1.4rem;
+  }
+
+  .instrument-name {
+    font-size: 2rem;
   }
 }
 
